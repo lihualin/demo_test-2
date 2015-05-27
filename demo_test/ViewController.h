@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<MBProgressHUDDelegate>
+{
+    MBProgressHUD * _HUDView;
+}
+- (void)showHUDWithMessage:(NSString *)message view:(UIView *)view;
+- (void)hideHUD;
+- (void)showHUDWithMessage:(NSString *)message view:(UIView *)view second:(NSTimeInterval)second;
 
 @end
 
