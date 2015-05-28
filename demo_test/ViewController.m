@@ -129,7 +129,7 @@
 }
 
 - (IBAction)btnClick:(id)sender {
-   //nufhgkejgniah
+    NSLog(@"你好");
 }
 
 
